@@ -1,0 +1,490 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Left-side navbar styles */
+  .navbar {
+    /* display: flex; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: #fff;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  /* Main content styles */
+  main {
+    margin-left: 250px; /* Make space for the left-side navbar */
+    padding: 20px;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    /* For screens smaller than 768px (e.g., mobile devices) */
+    .navbar {
+      bottom: 0;
+      top: unset;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: self-end;
+      padding: 10px;
+      
+    }
+
+    .display-bell{
+        /* display: flex; */
+        /* align-items: self-start; */
+        display: none;
+    }
+    .display-none{
+        display: none;
+    }
+    
+    
+    main {
+      margin-left: 0;
+    }
+  }
+  
+ .image-logo img{
+    height: 45px; 
+    width: 50px;
+    margin-left: -12px;
+  }
+  .Top-space img{
+    margin-top: 20px;
+  }
+
+  .home-icon{
+      margin-top: 30px;
+  } 
+
+  .bell-icon{
+    margin-top: 300px;
+  }
+
+
+  /* for slide page */
+  
+  .dashboard.active {
+    left: 0; /* Slide the dashboard into view when active */
+  }
+
+ .icon-container img {
+  width: 32px; /* Adjust the size of the icons as needed */
+  height: 32px;
+  margin: -3px;
+  transition: transform 0.3s, color 0.3s; /* Adding a smooth transition on hover */
+}
+
+.icon-container img:hover {
+  transform: scale(1.2); /* Increase the size on hover (adjust as needed) */
+  background-color: rgb(4, 0, 255);
+}
+
+
+.dashboard {
+  position: fixed;
+  top: 0;
+  left: -464px;  /* Initially hide the dashboard off-screen */
+  width: 313px;
+  height: 100vh;
+  background-color: #f4f1ee;
+  padding: 23px;
+  /* border-left: 1px solid #333; */
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  /* border-right: 1px solid #333; */
+  margin-left: 70px;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
+  transition: left 0.8s ease;
+}
+
+.dashboard-circle img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dashboard-section ,h2{
+  display: flex;
+  float: right;
+  font-size: 45px;
+   text-align: right;
+   margin: -72px 27px 0px;
+}
+.dashboard-section ,span{
+  display: flex;
+  float: right;
+  text-align: right;
+  font-size: 20px;
+  margin: -24px 72px 0px;
+}
+
+
+.section-to-inline{
+  /* background-color: #f1f1f1; */
+  width: 100%;
+  height: 31%;
+  line-height: 70px;
+}
+
+.section-to-inline{
+  display: flex;
+  flex-direction: column;
+}
+
+.sec1{
+  text-align: left;
+}
+
+h3{
+  font-size: 40px;
+  margin: 0;
+}
+h4{
+  margin-top: 0px;
+  font-size: 18px;
+}
+
+.p{
+  font-size: 16px;
+  margin-top: -40px;
+}
+.p1{
+  font-size: 16px;
+  margin-top: -74px;
+}
+.p2{
+  font-size: 16px;
+  margin-top: -74px;
+}
+#today{
+  margin: 40px  0px 0px 0px;
+  font-weight: bolder;
+}
+
+.sec-one{
+  margin: 0px;
+}
+.sec-two{
+  margin: -45px 0px 0px 0px;
+}
+
+.sec-three{
+  margin: -45px 0px 0px 0px;
+}
+
+
+/* CSS  button*/
+.button-63 {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 14px;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 19px 24px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.button-63:active,
+.button-63:hover {
+  outline: 0;
+}
+
+@media (min-width: 768px) {
+  .button-63 {
+    font-size: 20px;
+    min-width: 164px;
+  }
+}
+
+
+.margin-gap{
+  margin-bottom: -18px;
+}
+
+
+/* main section */
+
+.main-section{
+  width: 50%;
+  height: 100vh;
+  margin-left: 35%;
+}
+.style{
+  margin-top: -14px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+hr.hr{
+  border-color: #5B42F3;
+  width: 175px;
+}
+
+.number{
+   font-size: 25px;
+   font-weight: bolder;
+}
+
+.display-horizontal{
+  display: flex;
+  margin: -32px 0px 0px -20px;
+  /* flex-flow: row; */
+}
+.display-horizontal div{
+margin: 0px;
+padding: 20px;
+}
+
+.tiny-button{
+    height: 14px;
+    width: 20px;
+    border-radius: 41%;
+    background-color: #5B42F3;
+    margin-right: 5px;
+}
+
+.Employe-section{
+  display: flex;
+  gap: 50px;
+}
+
+.Employe-section div{
+  margin: 0px;
+  
+}
+.align-right{
+  margin: 0px 0px 0px 14px;
+}
+
+.employe{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+
+/* chart */
+
+.Horizontal-bar{
+  width: 80%;
+  height: 35vh;
+  margin-left: -25px;
+}
+
+
+/* how do i compare with my pears section */
+p.blur {
+    color: gray;
+    margin-top: -16px;
+}
+hr.hr-last{
+  margin: 0px 0px 0px 0px;
+  width: 135px;
+  text-align: left;
+}
+
+/* circular progress bars */
+
+.container{
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+.progress-container {
+  display: inline-block;
+  position: relative;
+}
+
+.progress-circle {
+  transform: rotate(-90deg);
+}
+
+.progress-background {
+  fill: none;
+  stroke: #ccc;
+  stroke-width: 10;
+}
+
+.progress-bar {
+  fill: none;
+  stroke: #007BFF;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  animation: progressAnimation 2s ease-out forwards;
+}
+
+.progress-text {
+  position: absolute;
+  top: 49%;
+  left: -18%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  color: #007BFF;
+  font-weight: bold;
+}
+
+@keyframes progressAnimation {
+  to {
+    stroke-dashoffset: 78; /* 78% of 283 (the circumference) */
+  }
+}
+
+.container-first{
+  display: flex;
+  /* margin-top: 0px 0px 0px 0px; */
+}
+.container-first div{
+  margin-top: 3px;
+}
+
+.main-container-first{
+  height: 180px;
+  width: auto;
+  display: flex;
+  margin-top: -18px 0px 0px 0px;
+}
+
+.progress-bar-one {
+  fill: none;
+  stroke: #007BFF;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  animation: progressAnimation-one 2s ease-out forwards;
+}
+
+@keyframes progressAnimation-one {
+  to {
+    stroke-dashoffset: 30; /* 78% of 283 (the circumference) */
+  }
+}
+
+.progress-bar-two {
+  fill: none;
+  stroke: #007BFF;
+  stroke-width: 10;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  animation: progressAnimation-two 2s ease-out forwards;
+}
+
+@keyframes progressAnimation-two {
+  to {
+    stroke-dashoffset: 110; /* 78% of 283 (the circumference) */
+  }
+}
+
+/* range slider button */
+
+    /* Reset default styles for the range slider */
+    
+input[type="range"] {
+  /* -webkit-appearance: none;  */
+  width: 100%;
+  height: 3px; /* Customize the height of the slider */
+  background: #ddd; /* Set a background color for the slider track */
+  border-radius: 5px;
+  outline: none;
+  margin: 10px 0;
+  padding: 0;
+}
+/* Customize the slider thumb/button */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Hides the default thumb appearance on Webkit browsers */
+  width: 20px;
+  height: 20px;
+  border-radius: 50%; /* Makes the thumb circular */
+  background: blue; /* Set the blue color for the thumb */
+  cursor: pointer;
+}
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: none; /* Removes the default thumb appearance on Firefox */
+  border-radius: 50%;
+  background: blue;
+  cursor: pointer;
+}
+/* Additional styles for Firefox to remove the slider track fill */
+input[type="range"]::-moz-range-progress {
+  background: transparent;
+}
+/* Additional styles for IE to remove the slider track fill */
+input[type="range"]::-ms-fill-lower {
+  background: transparent;
+}
+
+/* Last section */
+
+.main-section-one{
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* height: 95vh; */
+}
+
+.last-section{
+  width: 23%;
+  margin-top: 14px;
+}
+
+#fix{
+  margin: 0px 0px 0px 0px;
+}
+.for-gap{
+  display: flex;
+  gap: 10px;
+}
+
+.flex-it-one{
+  display: flex;
+  gap: 74px;
+}
+.flex-it-two{
+  display: flex;
+  gap: 142px;
+}
+
+.to-center{
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical{
+      border-left: 2px solid blue;
+      height: 110px;
+      position:absolute;
+      left: 80%;
+}
